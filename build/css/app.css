@@ -581,6 +581,24 @@ h3 {
 .testimonial:last-of-type {
   margin-bottom: 0;
 }
+@media (min-width: 768px) {
+  .testimonial {
+    margin-bottom: 0;
+  }
+  .testimonial:nth-child(1) {
+    grid-column: 1/4;
+  }
+  .testimonial:nth-child(3) {
+    grid-column: 5/6;
+    grid-row: 1/3;
+  }
+  .testimonial:nth-child(4) {
+    grid-column: 1/3;
+  }
+  .testimonial:nth-child(5) {
+    grid-column: 3/5;
+  }
+}
 .testimonial__header {
   display: flex;
   gap: 2rem;
@@ -611,5 +629,19 @@ h3 {
   top: -4rem;
   opacity: 0.2;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.testimoniales {
+  padding: 5rem 0;
+}
+.testimoniales__heading {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .testimoniales__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 /*# sourceMappingURL=app.css.map */
